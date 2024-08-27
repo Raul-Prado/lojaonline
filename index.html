@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FB5607">
+    <meta name="description" content="Descrição do conteúdo da página">
+    <meta name="keywords" content="palavra1, palavra2, palavra3">
+    <meta name="robots" content="index, follow">
+    <meta name="copyright" content="Nome do Detentor dos Direitos Autorais">
+    <meta name="revisit-after" content="30 days">
+    <meta property="og:title" content="Título da Página">
+    <meta property="og:description" content="Descrição da Página">
+    <meta property="og:image" content="URL da Imagem">
+    <meta property="og:url" content="URL da Página">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- folha de estilos -->
+    <link rel="stylesheet" href="./src/css/input.css">
+    <link rel="stylesheet" href="./dist/styles.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Loja Online</title>
+</head>
+
+<body>
+    <nav
+        class="fixed top-0 left-0 lg:p-10 z-30 bg-yellow text-black w-full uppercase tracking-[0.22px] md:text-[18px] md:p-8">
+        <div class="container mx-auto flex flex-row justify-between items-center">
+            <div>
+                <img src="./src/img/logo-black.png" alt="Shop Logo" srcset="">
+            </div>
+            <ul class="hidden md:flex flex-row gap-16 justify-end items-center">
+                <!-- Menu Masculino com Submenu -->
+                <li class="relative group">
+                    <a href="#" class="font-bold">Masculino</a>
+                    <ul
+                        class="absolute left-0 mt-2 hidden group-hover:block group-hover:mt-0 group-hover:pb-4 bg-yellow text-black py-2 w-48">
+                        <li><a href="#masculino-camisetas" class="block px-4 py-2 hover:bg-gray-200">Camisetas</a></li>
+                        <li><a href="#masculino-acessorios" class="block px-4 py-2 hover:bg-gray-200">Acessórios</a>
+                        </li>
+                        <li><a href="#masculino-tenis" class="block px-4 py-2 hover:bg-gray-200">Tênis</a></li>
+                    </ul>
+                </li>
+                <!-- Menu Feminino com Submenu -->
+                <li class="relative group">
+                    <a href="#" class="font-bold">Feminino</a>
+                    <ul
+                        class="absolute left-0 mt-2 hidden group-hover:block group-hover:mt-0 group-hover:pb-4 bg-yellow text-black py-2 w-48">
+                        <li><a href="#feminino-camisetas" class="block px-4 py-2 hover:bg-gray-200">Camisetas</a></li>
+                        <!-- <li><a href="#feminino-acessorios" class="block px-4 py-2 hover:bg-gray-200">Acessórios</a></li>
+                        <li><a href="#feminino-tenis" class="block px-4 py-2 hover:bg-gray-200">Tênis</a></li> -->
+                    </ul>
+                </li>
+                <!-- Carrinho -->
+                <li>
+                    <a class="bg-black text-white rounded-md py-4 px-4" href="#">
+                        <i class="fa fa-cart-plus text-lg text-white"></i> Carrinho
+                    </a>
+                </li>
+            </ul>
+            <div class="md:hidden z-20">
+                <div class="space-y-1 rotate-180" id="hamburger">
+                    <div class="w-6 h-0.5 transition-all bg-black"></div>
+                    <div class="w-6 h-0.5 transition-all bg-black"></div>
+                    <div class="w-6 h-0.5 transition-all bg-black"></div>
+                </div>
+                <ul class="flex flex-col justify-start gap-5 h-screen absolute top-0 left-0 bg-yellow p-10 items-start -translate-x-full transition-all"
+                    id="mobile-nav">
+                    <div>
+                        <img src="./src/img/logo-black.png" alt="Shop Logo">
+                    </div>
+                    <!-- Menu Mobile Masculino com Submenu -->
+                    <li class="font-bold">Masculino</li>
+                    <ul class="pl-4">
+                        <li><a href="#masculino-camisetas" class="block py-2 hover:bg-gray-200">Camisetas</a></li>
+                        <li><a href="#masculino-acessorios" class="block py-2 hover:bg-gray-200">Acessórios</a></li>
+                        <li><a href="#masculino-tenis" class="block py-2 hover:bg-gray-200">Tênis</a></li>
+                    </ul>
+                    <!-- Menu Mobile Feminino com Submenu -->
+                    <li class="font-bold mt-4">Feminino</li>
+                    <ul class="pl-4">
+                        <li><a href="#feminino-camisetas" class="block py-2 hover:bg-gray-200">Camisetas</a></li>
+                        <!-- <li><a href="#feminino-acessorios" class="block py-2 hover:bg-gray-200">Acessórios</a></li>
+                        <li><a href="#feminino-tenis" class="block py-2 hover:bg-gray-200">Tênis</a></li> -->
+                    </ul>
+                    <li class="mt-4">
+                        <a class="bg-black text-white rounded-md py-4 px-4" href="#">
+                            <i class="fa fa-cart-plus text-lg text-white"></i> Carrinho
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- banner -->
+    <section
+        class="flex flex-col container mx-auto bg-[#F4F6F5] rounded-[59px] pt-16 px-10 md:items-center md:px-20 md:pt-[68px] md:flex-row md:justify-between gap-10 z-30">
+        <div class="flex flex-col items-start text-black md:pb-[68px] z-10  ">
+            <h1 class="text-4xl font-black  leading-[125%] sm:text-5xl md:text-[56px] md:leading-[125%]">
+                <span
+                    class="relative after:w-[120%] after:h-full after:bg-white after:block after:absolute after:-z-10 after:top-0 after:-rotate-2">COMPRE
+                    FÁCIL</span> <br />RECEBA RÁPIDO<br />
+                <span
+                    class="relative after:w-[120%] after:h-full after:bg-yellow  after:block after:absolute after:-z-10 after:top-0 after:-rotate-2">SEU
+                    PEDIDO</span> <br /> APENAS UM CLIQUE!.
+            </h1>
+            <p class="md:text-[32px]">Produtos de qualidade, entrega rápida e atendimento personalizado ao seu alcance!
+            </p>
+            <div class="flex flex-col md:flex-row md:items-center justify-evenly gap-9 pt-8">
+                <div class="w-1/2 h-1/2">
+                    <img class="" src="./src/img/banner-image-2.png" alt="banner image" srcset="">
+                </div>
+                <a class="bg-black text-white rounded-md py-4 px-4 text-center" href="#">Compre agora</a>
+            </div>
+        </div>
+        <div class="">
+            <img class="w-full"
+                src="./src/img/camiseta_levi_s_masculina_preta_679_1_acd9fadd820a6395d2058f5a22c242d9.webp"
+                alt="banner image" />
+        </div>
+    </section>
+    <!-- marcas -->
+    <section class="flex flex-col justify-center items-center gap-12 my-10 bg-yellow py-[61px]">
+        <p class="text-black text-center text-[32px] font-medium">Marcas</p>
+        <div class="flex justify-center items-center gap-[121px] flex-wrap">
+            <div class="w-[118px]"><img src="./src/img/logos/marcas-como-nike.png" alt="Nike"></div>
+            <div class="w-[150px]"><img src="./src/img/logos/marcas-como-jordan.png" alt="Jordan"></div>
+            <div class="w-[176px]"><img src="./src/img/logos/marcas-como-obey.png" alt="Obey"></div>
+            <div class="w-[150px]"><img src="./src/img/logos/marcas-como-lacoste.png" alt="Lacoste"></div>
+            <div class="w-[127px]"><img src="./src/img/logos/marcas-como-levis.png" alt="Levi's"></div>
+        </div>
+    </section>
+    <!-- Categorias -->
+    <section class="container mx-auto py-8">
+        <div class="relative text-[#facc15]" id="masculino-camisetas">
+            <h2
+                class="text-4xl font-black after:content-oval after:absolute after:left-[50%] after:-bottom-2.5 after:-z-10 md:text-5xl">
+                Camisetas Masculinas</h2>
+            <hr>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+            <!-- Produto 1 -->
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img id="" src="/src/img/camiseta-lacoste-manga-curta-sport-ultra-dry-64b5c2dd8cfb0-5076.png"
+                    alt="Nome do Produto" class="product-image w-full h-48 object-cover rounded-t-lg cursor-pointer">
+                <h2 class="text-lg font-semibold mt-4">Camiseta Lacoste</h2>
+                <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Camiseta básica Lacoste, contendo
+                    bordado na parte frontal o jacaré mais famoso do mundo, símbolo da marca.
+                    Já a sua composição em 65% e 35% poliéster garantem o reconhecido conforto, qualidade e ótimo
+                    caimento que a Lacoste sempre oferece.</p>
+                <!-- Opções de Cor e Tamanho -->
+                <div class="mt-4 flex space-x-4">
+                    <!-- Opções de Cor -->
+                    <div>
+                        <label for="color" class="text-gray-600 text-sm">Cor:</label>
+                        <select id="color"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="white">Branca</option>
+                            <option value="black">Preta</option>
+                            <option value="gray">Cinza</option>
+                            <option value="blue">Azul</option>
+                            <option value="red">Vermelha</option>
+                        </select>
+                    </div>
+                    <!-- Opções de Tamanho -->
+                    <div>
+                        <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
+                        <select id="size"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="S">P</option>
+                            <option value="M">M</option>
+                            <option value="L">G</option>
+                            <option value="XL">GG</option>
+                            <option value="XXL">XGG</option>
+                        </select>
+                    </div>
+                </div>
+                <span class="text-xl font-bold text-yellow mt-4">R$ 224,90</span>
+                <button class="mt-4 bg-yellow text-white py-2 px-4 rounded">Comprar</button>
+            </div>
+            <!-- Produto 2 -->
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img id=""
+                    src="/src/img/camiseta_nike_sb_tee_logo_dc7817010_8301_1_ce7814f09a66c7a85441e217b6456362.webp"
+                    alt="Nome do Produto" class="product-image w-full h-48 object-cover rounded-t-lg cursor-pointer">
+                <h2 class="text-lg font-semibold mt-4">Camiseta Nike</h2>
+                <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Camiseta básica Nike skater board.</p>
+                <!-- Opções de Cor e Tamanho -->
+                <div class="mt-4 flex space-x-4">
+                    <!-- Opções de Cor -->
+                    <div>
+                        <label for="color" class="text-gray-600 text-sm">Cor:</label>
+                        <select id="color"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="white">Branca</option>
+                            <option value="black">Preta</option>
+                            <option value="gray">Cinza</option>
+                            <option value="blue">Azul</option>
+                            <option value="red">Vermelha</option>
+                        </select>
+                    </div>
+                    <!-- Opções de Tamanho -->
+                    <div>
+                        <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
+                        <select id="size"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="S">P</option>
+                            <option value="M">M</option>
+                            <option value="L">G</option>
+                            <option value="XL">GG</option>
+                            <option value="XXL">XGG</option>
+                        </select>
+                    </div>
+                </div>
+                <span class="text-xl font-bold text-yellow mt-4">R$ 99,99</span>
+                <button class="mt-4 bg-yellow text-white py-2 px-4 rounded hover:bg-yellow">Comprar</button>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img id="" src="/src/img/camiseta_levi_s_masculina_branca_677_3_1c2b0f2ea07843c00428d3188ad6c1fe.webp"
+                    alt="Nome do Produto" class="product-image w-full h-48 object-cover rounded-t-lg cursor-pointer">
+                <h2 class="text-lg font-semibold mt-4">Camiseta Levi's</h2>
+                <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Camiseta básica Levi's, contendo
+                    bordado na parte frontal o jacaré mais famoso do mundo, símbolo da marca.
+                    Já a sua composição em 65% e 35% poliéster garantem o reconhecido conforto, qualidade e ótimo
+                    caimento que a Lacoste sempre oferece.</p>
+                <!-- Opções de Cor e Tamanho -->
+                <div class="mt-4 flex space-x-4">
+                    <!-- Opções de Cor -->
+                    <div>
+                        <label for="color" class="text-gray-600 text-sm">Cor:</label>
+                        <select id="color"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="white">Branca</option>
+                            <option value="black">Preta</option>
+                            <option value="gray">Cinza</option>
+                            <option value="blue">Azul</option>
+                            <option value="red">Vermelha</option>
+                        </select>
+                    </div>
+                    <!-- Opções de Tamanho -->
+                    <div>
+                        <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
+                        <select id="size"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="S">P</option>
+                            <option value="M">M</option>
+                            <option value="L">G</option>
+                            <option value="XL">GG</option>
+                            <option value="XXL">XGG</option>
+                        </select>
+                    </div>
+                </div>
+                <span class="text-xl font-bold text-yellow mt-4">R$ 124,90</span>
+                <button class="mt-4 bg-yellow text-white py-2 px-4 rounded">Comprar</button>
+            </div>
+
+            <!-- Produto 4 -->
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img id="" src="/src/img/mockup-02186b9cb74d71c73016987000116500-1024-1024.jpg" alt="Nome do Produto"
+                    class="product-image w-full h-48 object-cover rounded-t-lg cursor-pointer">
+                <h2 class="text-lg font-semibold mt-4">Camiseta OBEY</h2>
+                <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Camiseta básica OBEY, contendo
+                    bordado na parte frontal o jacaré mais famoso do mundo, símbolo da marca.
+                    Já a sua composição em 65% e 35% poliéster garantem o reconhecido conforto, qualidade e ótimo
+                    caimento que a Lacoste sempre oferece.</p>
+                <!-- Opções de Cor e Tamanho -->
+                <div class="mt-4 flex space-x-4">
+                    <!-- Opções de Cor -->
+                    <div>
+                        <label for="color" class="text-gray-600 text-sm">Cor:</label>
+                        <select id="color"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="white">Branca</option>
+                            <option value="black">Preta</option>
+                            <option value="gray">Cinza</option>
+                            <option value="blue">Azul</option>
+                            <option value="red">Vermelha</option>
+                        </select>
+                    </div>
+                    <!-- Opções de Tamanho -->
+                    <div>
+                        <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
+                        <select id="size"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="S">P</option>
+                            <option value="M">M</option>
+                            <option value="L">G</option>
+                            <option value="XL">GG</option>
+                            <option value="XXL">XGG</option>
+                        </select>
+                    </div>
+                </div>
+                <span class="text-xl font-bold text-yellow mt-4">R$ 204,90</span>
+                <button class="mt-4 bg-yellow text-white py-2 px-4 rounded">Comprar</button>
+            </div>
+
+            <!-- Produto 5 -->
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img id="" src="/src/img/JD8-3957-014_zoom1.webp" alt="Nome do Produto"
+                    class="product-image w-full h-48 object-cover rounded-t-lg cursor-pointer">
+                <h2 class="text-lg font-semibold mt-4">Camiseta Nike Jordan</h2>
+                <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Camiseta básica Nike Jordan, contendo
+                    bordado na parte frontal o jacaré mais famoso do mundo, símbolo da marca.
+                    Já a sua composição em 65% e 35% poliéster garantem o reconhecido conforto, qualidade e ótimo
+                    caimento que a Lacoste sempre oferece.</p>
+                <!-- Opções de Cor e Tamanho -->
+                <div class="mt-4 flex space-x-4">
+                    <!-- Opções de Cor -->
+                    <div>
+                        <label for="color" class="text-gray-600 text-sm">Cor:</label>
+                        <select id="color"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="white">Branca</option>
+                            <option value="black">Preta</option>
+                            <option value="gray">Cinza</option>
+                            <option value="blue">Azul</option>
+                            <option value="red">Vermelha</option>
+                        </select>
+                    </div>
+                    <!-- Opções de Tamanho -->
+                    <div>
+                        <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
+                        <select id="size"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="S">P</option>
+                            <option value="M">M</option>
+                            <option value="L">G</option>
+                            <option value="XL">GG</option>
+                            <option value="XXL">XGG</option>
+                        </select>
+                    </div>
+                </div>
+                <span class="text-xl font-bold text-yellow mt-4">R$ 324,90</span>
+                <button class="mt-4 bg-yellow text-white py-2 px-4 rounded">Comprar</button>
+            </div>
+        </div>
+        <!-- acessorios -->
+        <div class="relative text-[#facc15] mt-10" id="masculino-acessorios">
+            <h2
+                class="text-4xl font-black after:content-oval after:absolute after:left-[50%] after:-bottom-2.5 after:-z-10 md:text-5xl">
+                Acessórios masculino</h2>
+            <hr>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+            <!-- Produto 6 -->
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img id="" src="/src/img/RB9883_YRD_24.avif" alt="Nome do Produto"
+                    class="product-image w-full h-48 object-cover rounded-t-lg cursor-pointer">
+                <h2 class="text-lg font-semibold mt-4">Gorro unissex Lacoste</h2>
+                <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Gorro unissex Lacoste em ribana de lã.
+                </p>
+                <!-- Opções de Cor e Tamanho -->
+                <div class="mt-4 flex space-x-4">
+                    <!-- Opções de Cor -->
+                    <div>
+                        <label for="color" class="text-gray-600 text-sm">Cor:</label>
+                        <select id="color"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="white">Branca</option>
+                            <option value="black">Preta</option>
+                            <option value="gray">Cinza</option>
+                            <option value="blue">Azul</option>
+                            <option value="red">Vermelha</option>
+                        </select>
+                    </div>
+                    <!-- Opções de Tamanho -->
+                    <div>
+                        <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
+                        <select id="size"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="S">P</option>
+                            <option value="M">M</option>
+                            <option value="L">G</option>
+                            <option value="XL">GG</option>
+                            <option value="XXL">XGG</option>
+                        </select>
+                    </div>
+                </div>
+                <span class="text-xl font-bold text-yellow mt-4">R$ 94,90</span>
+                <button class="mt-4 bg-yellow text-white py-2 px-4 rounded">Comprar</button>
+            </div>
+
+            <!-- Produto 7 -->
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img id="" src="/src/img/013734CTA4.avif" alt="Nome do Produto"
+                    class="product-image w-full h-48 object-cover rounded-t-lg cursor-pointer">
+                <h2 class="text-lg font-semibold mt-4">Meia Nike Everyday</h2>
+                <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Meia Nike Everyday.</p>
+                <!-- Opções de Cor e Tamanho -->
+                <div class="mt-4 flex space-x-4">
+                    <!-- Opções de Cor -->
+                    <div>
+                        <label for="color" class="text-gray-600 text-sm">Cor:</label>
+                        <select id="color"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="white">Branca</option>
+                            <option value="black">Preta</option>
+                            <option value="gray">Cinza</option>
+                            <option value="blue">Azul</option>
+                            <option value="red">Vermelha</option>
+                        </select>
+                    </div>
+                    <!-- Opções de Tamanho -->
+                    <div>
+                        <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
+                        <select id="size"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="S">P</option>
+                            <option value="M">M</option>
+                            <option value="L">G</option>
+                            <option value="XL">GG</option>
+                            <option value="XXL">XGG</option>
+                        </select>
+                    </div>
+                </div>
+                <span class="text-xl font-bold text-yellow mt-4">R$ 194,90</span>
+                <button class="mt-4 bg-yellow text-white py-2 px-4 rounded">Comprar</button>
+            </div>
+
+            <!-- Produto 8 -->
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img id="" src="/src/img/100050026_BUR_1_2400x2400.webp" alt="Nome do Produto"
+                    class="product-image w-full h-48 object-cover rounded-t-lg cursor-pointer">
+                <h2 class="text-lg font-semibold mt-4">BIG BOY WEB BELT</h2>
+                <p class="text-gray-600 text-sm mt-2 text-center encutador-text">BIG BOY WEB BELT.</p>
+                <!-- Opções de Cor e Tamanho -->
+                <div class="mt-4 flex space-x-4">
+                    <!-- Opções de Cor -->
+                    <div>
+                        <label for="color" class="text-gray-600 text-sm">Cor:</label>
+                        <select id="color"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="white">Branca</option>
+                            <option value="black">Preta</option>
+                            <option value="gray">Cinza</option>
+                            <option value="blue">Azul</option>
+                            <option value="red">Vermelha</option>
+                        </select>
+                    </div>
+                    <!-- Opções de Tamanho -->
+                    <div>
+                        <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
+                        <select id="size"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="S">P</option>
+                            <option value="M">M</option>
+                            <option value="L">G</option>
+                            <option value="XL">GG</option>
+                            <option value="XXL">XGG</option>
+                        </select>
+                    </div>
+                </div>
+                <span class="text-xl font-bold text-yellow mt-4">R$ 34,90</span>
+                <button class="mt-4 bg-yellow text-white py-2 px-4 rounded">Comprar</button>
+            </div>
+
+            <!-- Produto 9 -->
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img id="" src="/src/img/519678-800-800.webp" alt="Nome do Produto"
+                    class="product-image w-full h-48 object-cover rounded-t-lg cursor-pointer">
+                <h2 class="text-lg font-semibold mt-4">MOCHILA LEVI'S L-PACK</h2>
+                <p class="text-gray-600 text-sm mt-2 text-center encutador-text">MOCHILA LEVI'S L-PACK STANDARD ISSUE
+                    BATWING AZUL</p>
+                <!-- Opções de Cor e Tamanho -->
+                <div class="mt-4 flex space-x-4">
+                    <!-- Opções de Cor -->
+                    <div>
+                        <label for="color" class="text-gray-600 text-sm">Cor:</label>
+                        <select id="color"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="white">Branca</option>
+                            <option value="black">Preta</option>
+                            <option value="gray">Cinza</option>
+                            <option value="blue">Azul</option>
+                            <option value="red">Vermelha</option>
+                        </select>
+                    </div>
+                    <!-- Opções de Tamanho -->
+                    <div>
+                        <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
+                        <select id="size"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="S">P</option>
+                            <option value="M">M</option>
+                            <option value="L">G</option>
+                            <option value="XL">GG</option>
+                            <option value="XXL">XGG</option>
+                        </select>
+                    </div>
+                </div>
+                <span class="text-xl font-bold text-yellow mt-4">R$ 234,90</span>
+                <button class="mt-4 bg-yellow text-white py-2 px-4 rounded">Comprar</button>
+            </div>
+
+            <!-- Produto 10 -->
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img id="" src="/src/img/026657BPA3.avif" alt="Nome do Produto"
+                    class="product-image w-full h-48 object-cover rounded-t-lg cursor-pointer">
+                <h2 class="text-lg font-semibold mt-4">Chapéu Jordan Apex</h2>
+                <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Chapéu Jordan Apex</p>
+                <!-- Opções de Cor e Tamanho -->
+                <div class="mt-4 flex space-x-4">
+                    <!-- Opções de Cor -->
+                    <div>
+                        <label for="color" class="text-gray-600 text-sm">Cor:</label>
+                        <select id="color"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="white">Branca</option>
+                            <option value="black">Preta</option>
+                            <option value="gray">Cinza</option>
+                            <option value="blue">Azul</option>
+                            <option value="red">Vermelha</option>
+                        </select>
+                    </div>
+                    <!-- Opções de Tamanho -->
+                    <div>
+                        <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
+                        <select id="size"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="S">P</option>
+                            <option value="M">M</option>
+                            <option value="L">G</option>
+                            <option value="XL">GG</option>
+                            <option value="XXL">XGG</option>
+                        </select>
+                    </div>
+                </div>
+                <span class="text-xl font-bold text-yellow mt-4">R$ 134,90</span>
+                <button class="mt-4 bg-yellow text-white py-2 px-4 rounded">Comprar</button>
+            </div>
+        </div>
+        <!-- tenis -->
+        <div id="masculino-tenis" class="relative text-[#facc15] mt-10">
+            <h2
+                class="text-4xl font-black after:content-oval after:absolute after:left-[50%] after:-bottom-2.5 after:-z-10 md:text-5xl">
+                Tênis masculino</h2>
+            <hr>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+            <!-- Produto 11 -->
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img id="" src="/src/img/M132EN01.webp" alt="Nome do Produto"
+                    class="product-image w-full h-48 object-cover rounded-t-lg cursor-pointer">
+                <h2 class="text-lg font-semibold mt-4">Tênis Jordan Jumpman</h2>
+                <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Tênis Nike Jordan Jumpman Mvp</p>
+                <!-- Opções de Cor e Tamanho -->
+                <div class="mt-4 flex space-x-4">
+                    <!-- Opções de Cor -->
+                    <div>
+                        <label for="color" class="text-gray-600 text-sm">Cor:</label>
+                        <select id="color"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="white">Branca</option>
+                            <option value="black">Preta</option>
+                            <option value="gray">Cinza</option>
+                            <option value="blue">Azul</option>
+                            <option value="red">Vermelha</option>
+                        </select>
+                    </div>
+                    <!-- Opções de Tamanho -->
+                    <div>
+                        <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
+                        <select id="size"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="S">P</option>
+                            <option value="M">M</option>
+                            <option value="L">G</option>
+                            <option value="XL">GG</option>
+                            <option value="XXL">XGG</option>
+                        </select>
+                    </div>
+                </div>
+                <span class="text-xl font-bold text-yellow mt-4">R$ 849,99</span>
+                <button class="mt-4 bg-yellow text-white py-2 px-4 rounded">Comprar</button>
+            </div>
+
+            <!-- Produto 12 -->
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img id="" src="/src/img/tenis_lacoste_audyssor_trail_zip_8600_1_83cc768d5dee041ed8fbd1a750b2b47c.webp"
+                    alt="Nome do Produto" class="product-image w-full h-48 object-cover rounded-t-lg cursor-pointer">
+                <h2 class="text-lg font-semibold mt-4">TENIS LACOSTE</h2>
+                <p class="text-gray-600 text-sm mt-2 text-center encutador-text">TENIS LACOSTE AUDYSSOR TRAIL ZIP</p>
+                <!-- Opções de Cor e Tamanho -->
+                <div class="mt-4 flex space-x-4">
+                    <!-- Opções de Cor -->
+                    <div>
+                        <label for="color" class="text-gray-600 text-sm">Cor:</label>
+                        <select id="color"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:byellow sm:text-sm">
+                            <option value="white">Branca</option>
+                            <option value="black">Preta</option>
+                            <option value="gray">Cinza</option>
+                            <option value="blue">Azul</option>
+                            <option value="red">Vermelha</option>
+                        </select>
+                    </div>
+                    <!-- Opções de Tamanho -->
+                    <div>
+                        <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
+                        <select id="size"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="S">P</option>
+                            <option value="M">M</option>
+                            <option value="L">G</option>
+                            <option value="XL">GG</option>
+                            <option value="XXL">XGG</option>
+                        </select>
+                    </div>
+                </div>
+                <span class="text-xl font-bold text-yellow mt-4">R$ 1.389,90</span>
+                <button class="mt-4 bg-yellow text-white py-2 px-4 rounded">Comprar</button>
+            </div>
+
+            <!-- Produto 13 -->
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img id="" src="/src/img/jordan-jordan-4-retro-levis-white-gs-levis-tag-aq9103-100.jpg"
+                    alt="Nome do Produto" class="product-image w-full h-48 object-cover rounded-t-lg cursor-pointer">
+                <h2 class="text-lg font-semibold mt-4">Jordan 4 Retro Levi's</h2>
+                <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Jordan Jordan 4 Retro Levi's</p>
+                <!-- Opções de Cor e Tamanho -->
+                <div class="mt-4 flex space-x-4">
+                    <!-- Opções de Cor -->
+                    <div>
+                        <label for="color" class="text-gray-600 text-sm">Cor:</label>
+                        <select id="color"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="white">Branca</option>
+                            <option value="black">Preta</option>
+                            <option value="gray">Cinza</option>
+                            <option value="blue">Azul</option>
+                            <option value="red">Vermelha</option>
+                        </select>
+                    </div>
+                    <!-- Opções de Tamanho -->
+                    <div>
+                        <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
+                        <select id="size"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="S">P</option>
+                            <option value="M">M</option>
+                            <option value="L">G</option>
+                            <option value="XL">GG</option>
+                            <option value="XXL">XGG</option>
+                        </select>
+                    </div>
+                </div>
+                <span class="text-xl font-bold text-yellow mt-4">R$ 3.134,90</span>
+                <button class="mt-4 bg-yellow text-white py-2 px-4 rounded">Comprar</button>
+            </div>
+
+            <!-- Produto 14 -->
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img id="" src="/src/img/47SMA0121_02H_01.avif" alt="Nome do Produto"
+                    class="product-image w-full h-48 object-cover rounded-t-lg cursor-pointer">
+                <h2 class="text-lg font-semibold mt-4">Tênis Lacoste L003 Evo</h2>
+                <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Tênis Lacoste L003 Evo Masculino</p>
+                <!-- Opções de Cor e Tamanho -->
+                <div class="mt-4 flex space-x-4">
+                    <!-- Opções de Cor -->
+                    <div>
+                        <label for="color" class="text-gray-600 text-sm">Cor:</label>
+                        <select id="color"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="white">Branca</option>
+                            <option value="black">Preta</option>
+                            <option value="gray">Cinza</option>
+                            <option value="blue">Azul</option>
+                            <option value="red">Vermelha</option>
+                        </select>
+                    </div>
+                    <!-- Opções de Tamanho -->
+                    <div>
+                        <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
+                        <select id="size"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="S">P</option>
+                            <option value="M">M</option>
+                            <option value="L">G</option>
+                            <option value="XL">GG</option>
+                            <option value="XXL">XGG</option>
+                        </select>
+                    </div>
+                </div>
+                <span class="text-xl font-bold text-yellow mt-4">R$ 899</span>
+                <button class="mt-4 bg-yellow text-white py-2 px-4 rounded">Comprar</button>
+            </div>
+        </div>
+        <!-- feminino -->
+        <div class="relative text-[#facc15] mt-10" id="feminino-camisetas">
+            <h2
+                class="text-4xl font-black after:content-oval after:absolute after:left-[50%] after:-bottom-2.5 after:-z-10 md:text-5xl">
+                Camisetas Feminino</h2>
+            <hr>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-center">
+            <!-- Produto 1 -->
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img id="" src="/src/img/TF0896_001_20.webp" alt="Nome do Produto"
+                    class="product-image w-full h-48 object-cover rounded-t-lg cursor-pointer">
+                <h2 class="text-lg font-semibold mt-4">Camiseta Regular Fit</h2>
+                <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Camiseta Feminina Regular Fit em
+                    Jersey.</p>
+                <!-- Opções de Cor e Tamanho -->
+                <div class="mt-4 flex space-x-4">
+                    <!-- Opções de Cor -->
+                    <div>
+                        <label for="color" class="text-gray-600 text-sm">Cor:</label>
+                        <select id="color"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="white">Branca</option>
+                            <option value="black">Preta</option>
+                            <option value="gray">Cinza</option>
+                            <option value="blue">Azul</option>
+                            <option value="red">Vermelha</option>
+                        </select>
+                    </div>
+                    <!-- Opções de Tamanho -->
+                    <div>
+                        <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
+                        <select id="size"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="S">P</option>
+                            <option value="M">M</option>
+                            <option value="L">G</option>
+                            <option value="XL">GG</option>
+                            <option value="XXL">XGG</option>
+                        </select>
+                    </div>
+                </div>
+                <span class="text-xl font-bold text-yellow mt-4">R$ 224,90</span>
+                <button class="mt-4 bg-yellow text-white py-2 px-4 rounded">Comprar</button>
+            </div>
+            <!-- Produto 2 -->
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img id="" src="/src/img/TF7215_QDS_20.webp" alt="Nome do Produto"
+                    class="product-image w-full h-48 object-cover rounded-t-lg cursor-pointer">
+                <h2 class="text-lg font-semibold mt-4">Camiseta Pima Jersey</h2>
+                <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Camiseta de Algodão Pima Jersey Leve de
+                    Ajuste Relaxado.</p>
+                <!-- Opções de Cor e Tamanho -->
+                <div class="mt-4 flex space-x-4">
+                    <!-- Opções de Cor -->
+                    <div>
+                        <label for="color" class="text-gray-600 text-sm">Cor:</label>
+                        <select id="color"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="white">Branca</option>
+                            <option value="black">Preta</option>
+                            <option value="gray">Cinza</option>
+                            <option value="blue">Azul</option>
+                            <option value="red">Vermelha</option>
+                        </select>
+                    </div>
+                    <!-- Opções de Tamanho -->
+                    <div>
+                        <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
+                        <select id="size"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="S">P</option>
+                            <option value="M">M</option>
+                            <option value="L">G</option>
+                            <option value="XL">GG</option>
+                            <option value="XXL">XGG</option>
+                        </select>
+                    </div>
+                </div>
+                <span class="text-xl font-bold text-yellow mt-4">R$ 99,99</span>
+                <button class="mt-4 bg-yellow text-white py-2 px-4 rounded hover:bg-yellow">Comprar</button>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img id="" src="/src/img/TF1605_YZP_20.webp" alt="Nome do Produto"
+                    class="product-image w-full h-48 object-cover rounded-t-lg cursor-pointer">
+                <h2 class="text-lg font-semibold mt-4">Camiseta Estampa Texto</h2>
+                <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Camiseta com Estampa de Texto e
+                    Modelagem Relaxada.</p>
+                <!-- Opções de Cor e Tamanho -->
+                <div class="mt-4 flex space-x-4">
+                    <!-- Opções de Cor -->
+                    <div>
+                        <label for="color" class="text-gray-600 text-sm">Cor:</label>
+                        <select id="color"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="white">Branca</option>
+                            <option value="black">Preta</option>
+                            <option value="gray">Cinza</option>
+                            <option value="blue">Azul</option>
+                            <option value="red">Vermelha</option>
+                        </select>
+                    </div>
+                    <!-- Opções de Tamanho -->
+                    <div>
+                        <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
+                        <select id="size"
+                            class="mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                            <option value="S">P</option>
+                            <option value="M">M</option>
+                            <option value="L">G</option>
+                            <option value="XL">GG</option>
+                            <option value="XXL">XGG</option>
+                        </select>
+                    </div>
+                </div>
+                <span class="text-xl font-bold text-yellow mt-4">R$ 124,90</span>
+                <button class="mt-4 bg-yellow text-white py-2 px-4 rounded">Comprar</button>
+            </div>
+        </div>
+        <!-- Modal para Imagem Ampliada -->
+        <div id="modal" class="fixed inset-0 z-40 flex items-center justify-center bg-black bg-opacity-75 hidden">
+            <div class="relative">
+                <img id="modal-image" src="" alt="Imagem Ampliada" class="max-w-full h-96 rounded-lg">
+                <button id="close-modal" class="absolute top-2 right-2 text-white text-2xl">&times;</button>
+            </div>
+        </div>
+    </section>
+    <!-- Promoção -->
+    <section class="flex flex-col items-center py-36 bg-yellow">
+        <h4 class="text-2xl font-black text-white text-center tracking-[1.7px] mb-8 md:leading-[70px] md:text-[40px]">
+            JUNTE-SE À COMUNIDADE DE COMPRAS PARA <br /> GANHE PROMOÇÃO MENSAL</h4>
+        <p class="text-xl text-center text-white font-normal md:leading-9 tracking-[1px] md:text-[25px]">Digite seu
+            e-mail
+            lá embaixo e seja uma jovem geração selvagem</p>
+        <form class="mt-12">
+            <div class="bg-white rounded-[10px] flex flex-row items-center">
+                <input class="px-4 py-5 rounded-[10px] focus-visible:outline-0 md:py-6 md:px-7 " type="email"
+                    name="email" placeholder="Digite seu e-mail aqui">
+                <button
+                    class="py-2 px-4 bg-black text-white uppercase md:text-[20px] md:py-[5px] md:px-[20px] rounded-lg mr-2"
+                    type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+    <footer class="bg-black w-full mt-28 text-white">
+        <div class="flex flex-col gap-24 px-14 md:flex-row md:items-center md:justify-center">
+            <div class="flex flex-col items-center gap-8 md:items-start">
+                <div>
+                    <img src="./src/img/FASHION.png" alt="Fashion Logo" />
+                </div>
+                <div>
+                    <p class="text-xl text-[#8E8E8E] md:text-2xl font-normal text-center md:text-left">
+                        Complete seu estilo com incríveis <br />
+                        roupas de nós.
+                    </p>
+                </div>
+                <ul class="flex flex-row gap-[14px] justify-center md:justify-start">
+                    <li><a href="#"><img src="./images/fb.svg" alt="Facebook Logo"> Facebook</a></li>
+                    <li><a href="#"><img src="./images/insta.svg" alt="Instagram Logo"> Instagram</a></li>
+                    <li><a href="#"><img src="./images/linkedin.png" alt="LinkedIn Logo"> LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col gap-[50px] md:gap-[80px] md:flex-row md:items-center md:justify-center">
+                <div class="flex flex-col text-[#D9D9D9] gap-8 items-center md:items-start">
+                    <h4 class="font-bold">Contato</h4>
+                    <ul class="flex flex-col gap-4 text-center md:text-left">
+                        <li><a href="#">(11) 95030-4060</a></li>
+                        <li><a href="#">email@gmail.com</a></li>
+                        <li><a href="#">Rua Jardim São Paulo - SP</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col text-[#D9D9D9] gap-8 items-center md:items-start">
+                    <h4 class="font-bold">Legal</h4>
+                    <ul class="flex flex-col gap-4 text-center md:text-left">
+                        <li><a href="#">Termos & Condições</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subfooter -->
+        <div class="bg-black w-full py-4 text-white text-center mt-16">
+            <a class="text-white font-medium" href="https://wa.me/5511976696658" title="Chama no WhatsApp"
+                target="_blank">
+                Desenvolvido por <span style="font-size:100%;">💻</span> GrupoInovaTech 2024
+                <span style="font-size:100%;">☕</span> Feito com Amor <span style="font-size:100%;">💛</span>
+            </a>
+        </div>
+    </footer>
+    <script src="./src/js/menuMobile.js" async></script>
+    <script src="./src/js/zoomImg.js" defer></script>
+</body>
+
+</html>
