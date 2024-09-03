@@ -4,6 +4,7 @@ const camisetas = [
         id: 1,
         genero: "Masculino",
         nome: "Camiseta Lacoste",
+        descricao: "Camiseta básica Lacoste, contendo bordado na parte frontal o jacaré mais famoso do mundo, símbolo da marca. Já a sua composição em 65% e 35% poliéster garantem o reconhecido conforto, qualidade e ótimo caimento que a Lacoste sempre oferece.",
         variacoes: [
             {
                 cor: "Azul",
@@ -22,6 +23,7 @@ const camisetas = [
         id: 2,
         genero: "Masculino",
         nome: "Camiseta Nike",
+        descricao: "Camiseta básica Nike skater board, contendo bordado na parte frontal o mais famoso do mundo, símbolo da marca. Já a sua composição em 65% e 35% poliéster garantem o reconhecido conforto, qualidade e ótimo caimento que a Lacoste sempre oferece.",
         variacoes: [
             {
                 cor: "Preto",
@@ -41,6 +43,7 @@ const camisetas = [
         id: 3,
         genero: "Masculino",
         nome: "Camiseta Levi's",
+        descricao: "Camiseta básica Levi's, contendo bordado na parte frontal o mais famoso do mundo, símbolo da marca. Já a sua composição em 65% e 35% poliéster garantem o reconhecido conforto, qualidade e ótimo caimento que a Lacoste sempre oferece.",
         variacoes: [
             {
                 cor: "Branco",
@@ -59,6 +62,7 @@ const camisetas = [
         id: 4,
         genero: "Masculino",
         nome: "Camiseta OBEY",
+        descricao: "Camiseta OBEY, contendo bordado na parte frontal o mais famoso do mundo, símbolo da marca. Já a sua composição em 65% e 35% poliéster garantem o reconhecido conforto, qualidade e ótimo caimento que a Lacoste sempre oferece.",
         variacoes: [
             {
                 cor: "Branco",
@@ -77,6 +81,7 @@ const camisetas = [
         id: 5,
         genero: "Masculino",
         nome: "Camiseta Nike Jordan",
+        descricao: "Camiseta Nike Jordan, contendo bordado na parte frontal o mais famoso do mundo, símbolo da marca. Já a sua composição em 65% e 35% poliéster garantem o reconhecido conforto, qualidade e ótimo caimento que a Lacoste sempre oferece.",
         variacoes: [
             {
                 cor: "Branco",
@@ -95,6 +100,7 @@ const camisetas = [
         id: 6,
         genero: "Masculino",
         nome: "Gorro unissex Lacoste",
+        descricao: "Gorro unissex Lacoste em ribana de lã, contendo bordado na parte frontal o mais famoso do mundo, símbolo da marca. Já a sua composição em 65% e 35% poliéster garantem o reconhecido conforto, qualidade e ótimo caimento que a Lacoste sempre oferece.",
         variacoes: [
             {
                 cor: "Cinza",
@@ -108,6 +114,7 @@ const camisetas = [
         id: 7,
         genero: "Masculino",
         nome: "Meia Nike Everyday",
+        descricao: "Meia Nike Everyday, contendo bordado na parte frontal o mais famoso do mundo, símbolo da marca. Já a sua composição em 65% e 35% poliéster garantem o reconhecido conforto, qualidade e ótimo caimento que a Lacoste sempre oferece.",
         variacoes: [
             {
                 cor: "Cinza",
@@ -121,6 +128,7 @@ const camisetas = [
         id: 8,
         genero: "Masculino",
         nome: "BIG BOY WEB BELT",
+        descricao: "BIG BOY WEB BELT, contendo bordado na parte frontal o mais famoso do mundo, símbolo da marca. Já a sua composição em 65% e 35% poliéster garantem o reconhecido conforto, qualidade e ótimo caimento que a Lacoste sempre oferece.",
         variacoes: [
             {
                 cor: "Vermelho",
@@ -134,6 +142,7 @@ const camisetas = [
         id: 9,
         genero: "Masculino",
         nome: "MOCHILA LEVI'S L-PACK",
+        descricao: "MOCHILA LEVI'S L-PACK, contendo bordado na parte frontal o mais famoso do mundo, símbolo da marca. Já a sua composição em 65% e 35% poliéster garantem o reconhecido conforto, qualidade e ótimo caimento que a Lacoste sempre oferece.",
         variacoes: [
             {
                 cor: "Azul",
@@ -147,6 +156,7 @@ const camisetas = [
         id: 10,
         genero: "Masculino",
         nome: "Chapéu Jordan Apex",
+        descricao: "Chapéu Jordan Apex, contendo bordado na parte frontal o mais famoso do mundo, símbolo da marca. Já a sua composição em 65% e 35% poliéster garantem o reconhecido conforto, qualidade e ótimo caimento que a Lacoste sempre oferece.",
         variacoes: [
             {
                 cor: "Laranja",
@@ -160,6 +170,7 @@ const camisetas = [
         id: 11,
         genero: "Masculino",
         nome: "Tênis Jordan Jumpman",
+        descricao: "Tênis Jordan Jumpman, contendo bordado na parte frontal o mais famoso do mundo, símbolo da marca. Já a sua composição em 65% e 35% poliéster garantem o reconhecido conforto, qualidade e ótimo caimento que a Lacoste sempre oferece.",
         variacoes: [
             {
                 cor: "Branco",
@@ -173,6 +184,7 @@ const camisetas = [
         id: 12,
         genero: "Masculino",
         nome: "TENIS LACOSTE",
+        descricao: "TENIS LACOSTE, contendo bordado na parte frontal o mais famoso do mundo, símbolo da marca. Já a sua composição em 65% e 35% poliéster garantem o reconhecido conforto, qualidade e ótimo caimento que a Lacoste sempre oferece.",
         variacoes: [
             {
                 cor: "Cinza",
@@ -186,6 +198,7 @@ const camisetas = [
         id: 13,
         genero: "Masculino",
         nome: "Jordan 4 Retro Levi's",
+        descricao: "Jordan 4 Retro Levi's, contendo bordado na parte frontal o mais famoso do mundo, símbolo da marca. Já a sua composição em 65% e 35% poliéster garantem o reconhecido conforto, qualidade e ótimo caimento que a Lacoste sempre oferece.",
         variacoes: [
             {
                 cor: "Branco",
@@ -199,6 +212,7 @@ const camisetas = [
         id: 14,
         genero: "Masculino",
         nome: "Tênis Lacoste L003 Evo",
+        descricao: "Tênis Lacoste L003 Evo, contendo bordado na parte frontal o mais famoso do mundo, símbolo da marca. Já a sua composição em 65% e 35% poliéster garantem o reconhecido conforto, qualidade e ótimo caimento que a Lacoste sempre oferece.",
         variacoes: [
             {
                 cor: "Preto",
@@ -212,6 +226,7 @@ const camisetas = [
         id: 15,
         genero: "Feminino",
         nome: "Camiseta Regular Fit",
+        descricao: "Camiseta Regular Fit, contendo bordado na parte frontal o mais famoso do mundo, símbolo da marca. Já a sua composição em 65% e 35% poliéster garantem o reconhecido conforto, qualidade e ótimo caimento que a Lacoste sempre oferece.",
         variacoes: [
             {
                 cor: "Verde militar",
@@ -225,6 +240,7 @@ const camisetas = [
         id: 16,
         genero: "Feminino",
         nome: "Camiseta Pima Jersey",
+        descricao: "Camiseta Pima Jersey, contendo bordado na parte frontal o mais famoso do mundo, símbolo da marca. Já a sua composição em 65% e 35% poliéster garantem o reconhecido conforto, qualidade e ótimo caimento que a Lacoste sempre oferece.",
         variacoes: [
             {
                 cor: "Rosa",
@@ -238,6 +254,7 @@ const camisetas = [
         id: 17,
         genero: "Feminino",
         nome: "Camiseta Estampa Texto",
+        descricao: "Camiseta Estampa Texto, contendo bordado na parte frontal o mais famoso do mundo, símbolo da marca. Já a sua composição em 65% e 35% poliéster garantem o reconhecido conforto, qualidade e ótimo caimento que a Lacoste sempre oferece.",
         variacoes: [
             {
                 cor: "Branco",
@@ -303,14 +320,6 @@ function preecherSelects(produto) {
             option.textContent = tamanho;
             selectTamanho.appendChild(option);
         });
-        //const produtoImagem = produtoContainer.querySelector('.product-image');
-        // produtoImagem.innerHTML = '';
-        // variacaoSelecionada.imagem.forEach(function (imagens) {
-        //     const img = document.createElement("img");
-        //     img.src = imagens.imagem;
-        //     //img.alt = `Imagem - Cor: ${variacaoSelecionada.cor}`;
-        //     produtoImagem.appendChild(img);
-        // });
     });
 }
 camisetas.forEach(function (produto) {
@@ -334,6 +343,69 @@ function closeModal(event) {
         return
     }
 }
+function generateSlug(name) {
+    return name
+        .toLowerCase()                   // Converte o nome para minúsculas
+        .replace(/[^a-z0-9\s-]/g, '')    // Remove caracteres não alfanuméricos e não espaços
+        .trim()                          // Remove espaços no início e no final
+        .replace(/\s+/g, '-')            // Substitui espaços por hífens
+        .replace(/-+/g, '-');            // Substitui múltiplos hífens por um único hífen
+}
+function imagemZoom() {
+    // Seleciona todos os elementos com a classe 'product-image'
+    const productImages = document.querySelectorAll('.product-image');
+    // Pega modal
+    const modal = document.getElementById('modal');
+    const tituloProduto = document.getElementById("title-product-name");
+    const modalDescription = document.getElementById("modal-product-description");
+    const modalProductPrice = document.getElementById("modal-product-price");
+    const modalProductGenero = document.getElementById("modal-product-genero");
+    const modalImagem = document.getElementById("modal-carousel");
+    // Fechar modal
+    const closeModal = document.getElementById('close-modal');
+
+    // Função para abrir o modal com as informações do produto
+    productImages.forEach(function (image) {
+        image.addEventListener('click', function () {
+            const produtoId = parseInt(image.dataset.idProduct);
+            const produto = camisetas.find(p => p.id === produtoId);
+
+            if (produto) {
+                tituloProduto.textContent = produto.nome;
+                modalProductGenero.textContent = produto.genero;
+                modalDescription.textContent = produto.descricao;
+                modalProductPrice.textContent = `R$ ${produto.preco.toFixed(2)}`;
+                modalImagem.innerHTML = "";
+
+                produto.variacoes.forEach(variacao => {
+                    const imgElement = document.createElement("img");
+                    imgElement.src = variacao.imagem;
+                    imgElement.alt = `${produto.nome} - ${variacao.cor}`;
+                    imgElement.classList.add("h-48", "rounded-lg", "object-cover", "cursor-pointer");
+                    modalImagem.appendChild(imgElement);
+                });
+                // Atualiza o histórico do navegador
+                const produtoSlug = generateSlug(produto.nome);
+                history.pushState({ produtoId: produtoId }, produto.nome, `/${produtoSlug}?produto=${produtoId}`);
+            }
+            modal.classList.remove('hidden');
+        });
+    });
+    // Função para fechar o modal
+    closeModal.addEventListener('click', () => {
+        modal.classList.add('hidden');
+        history.replaceState(null, "", "/");
+    });
+
+    // Fecha o modal ao clicar fora da área de conteúdo
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.add('hidden');
+            history.pushState(null, "", "/");
+        }
+    });
+}
+imagemZoom();
 //add carrinho
 function addCarrinho(event) {
     event.preventDefault();
@@ -343,10 +415,20 @@ function addCarrinho(event) {
     const productSelect = camisetas.find(function (produto) {
         return produto.id === idProduct;
     });
+    Toastify({
+        text: "Produto adicionado no carrinho.",
+        duration: 3000,
+        close: true,
+        gravity: "top",
+        position: "right",
+        stopOnFocus: true,
+        style: {
+            background: "green",
+        },
+        onClick: function () { }
+    }).showToast();
     const selectCor = productClick.querySelector(".select-color").value;
     const selectTamanho = productClick.querySelector(".select-size").value;
-    //console.log(`Produto selecionado: ${productSelect.genero}, ${productSelect.nome}, ${productSelect.preco}, ${selectCor}, ${selectTamanho}`);
-
     // Verificar se o produto já está no carrinho
     const itemNoCarrinho = carrinho.find(function (item) {
         return item.idProduto === idProduct && item.generoProduto === productSelect.genero && item.nomeProduto === productSelect.nome
@@ -369,14 +451,8 @@ function addCarrinho(event) {
         //add produto no array carrinho
         carrinho.push(produtoNoCarrinho);
     }
-    console.log(carrinho);
-    // console.log(`Produto selecionado: ${produtoNoCarrinho.idProduto}, 
-    //     ${produtoNoCarrinho.generoProduto}, 
-    //     ${produtoNoCarrinho.nomeProduto},
-    //     ${produtoNoCarrinho.tamanhoProduto}, 
-    //     ${produtoNoCarrinho.corProduto}, 
-    //     ${produtoNoCarrinho.precoProduto}`);
     updateCarrinho();
+    atualizarIndicadorCarrinho()
 }
 // atualizar carrinho
 function updateCarrinho() {
@@ -405,7 +481,6 @@ function updateCarrinho() {
             <div>
                 <button class="text-base mt-2 font-bold btn-remove bg-red-600" data-remove="${produto.nomeProduto}">Remover</button>
             </div>`;
-
         // Total compra
         totalCompra += parseFloat((produto.precoProduto * produto.quantidadeProduto));
         infoList.appendChild(elementHtml);
@@ -422,6 +497,25 @@ function updateCarrinho() {
     });
     validarCupom();
 }
+function atualizarIndicadorCarrinho() {
+    const botaoCarrinho = document.querySelector('.btn-modal');
+    const indicador = botaoCarrinho.querySelector('.cart-count');
+
+    let totalItems = carrinho.reduce((total, item) => total + item.quantidadeProduto, 0);
+
+    if (!indicador) {
+        const indicadorNovo = document.createElement('span');
+        indicadorNovo.classList.add('cart-count', 'ml-2', 'bg-red-500', 'text-white', 'rounded-full', 'px-2', 'py-1', 'text-xs');
+        indicadorNovo.textContent = totalItems;
+        botaoCarrinho.appendChild(indicadorNovo);
+    } else {
+        indicador.textContent = totalItems;
+    }
+
+    // Adiciona uma breve animação para chamar a atenção do usuário
+    botaoCarrinho.classList.add('animate-bounce');
+    setTimeout(() => botaoCarrinho.classList.remove('animate-bounce'), 500);
+}
 // remover cupom
 function validarCupom() {
     const cupomDesconto = document.getElementById("cupomDesconto").value.toUpperCase();
@@ -436,15 +530,33 @@ function validarCupom() {
         const cupomValido = cupons.find(function (cupom) {
             return cupom.nome === cupomDesconto;
         });
-
         if (cupomValido) {
             // Calcula o valor com o desconto
             const desconto = (valorTotal * cupomValido.desconto) / 100;
             totalDesconto.innerText = desconto.toFixed(2);
             const valorFinal = valorTotal - desconto;
             valorTotalTela.innerText = valorFinal.toFixed(2);
+            Toastify({
+                text: "Cupom aplicado",
+                duration: 3000,
+                close: true,
+                gravity: "top",
+                position: "right",
+                stopOnFocus: true,
+                style: { background: "green" },
+                onClick: function () { }
+            }).showToast();
         } else {
-            alert("Cupom inválido");
+            Toastify({
+                text: "Cupom inválido",
+                duration: 3000,
+                close: true,
+                gravity: "top",
+                position: "right",
+                stopOnFocus: true,
+                style: { background: "red" },
+                onClick: function () { }
+            }).showToast();
         }
     } else {
         // Se o cupom for inválido ou o carrinho estiver vazio, definir desconto como 0
@@ -469,6 +581,7 @@ function removerProduto(event) {
             carrinho.splice(index, 1);
         }
         updateCarrinho(); // Atualiza a exibição do carrinho
+        atualizarIndicadorCarrinho()
     }
 }
 //enviar produto
@@ -480,7 +593,6 @@ function enviarPedido() {
     const ano = horaData.getFullYear();
     const horas = horaData.getHours();
     const minutos = horaData.getMinutes();
-    //
     const nomeCliente = document.getElementById("nomeCliente").value
     const cupomUtilizado = document.getElementById("cupomDesconto").value;
     const enderecoCliente = document.getElementById("address").value;
