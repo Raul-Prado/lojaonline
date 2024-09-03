@@ -25,7 +25,7 @@ const camisetas = [
         variacoes: [
             {
                 cor: "Preto",
-                tamanhos: ["G", "GG", "XGG"],                
+                tamanhos: ["G", "GG", "XGG"],
                 imagem: "./src/img/camiseta_nike_sb_tee_logo_dc7817010_8301_1_ce7814f09a66c7a85441e217b6456362.webp",
 
             },
@@ -268,7 +268,7 @@ function preecherSelects(produto) {
     produtoPrice.textContent = produto.preco.toFixed(2);
     //imagem do produto
     const produtoImagem = produtoContainer.querySelector('.product-image');
-    if(produto.variacoes.length > 0){
+    if (produto.variacoes.length > 0) {
         produtoImagem.src = produto.variacoes[0].imagem;
     }
     //preencher cores
@@ -423,20 +423,20 @@ function updateCarrinho() {
     validarCupom();
 }
 // remover cupom
-function validarCupom(){
+function validarCupom() {
     const cupomDesconto = document.getElementById("cupomDesconto").value.toUpperCase();
     const totalDesconto = document.getElementById("descontoTotal");
     const valorTotalTela = document.getElementById("TotalApagar");
     const valorTotal = parseFloat(valorTotalTela.innerText);
     //verificar
-    const cupomValido = cupons.find(function(cupons){
+    const cupomValido = cupons.find(function (cupons) {
         return cupons.nome === cupomDesconto;
     });
     if (cupomDesconto && carrinho.length > 0) {
-        const cupomValido = cupons.find(function(cupom){
+        const cupomValido = cupons.find(function (cupom) {
             return cupom.nome === cupomDesconto;
         });
-        
+
         if (cupomValido) {
             // Calcula o valor com o desconto
             const desconto = (valorTotal * cupomValido.desconto) / 100;
@@ -484,7 +484,7 @@ function enviarPedido() {
     const nomeCliente = document.getElementById("nomeCliente").value
     const cupomUtilizado = document.getElementById("cupomDesconto").value;
     const enderecoCliente = document.getElementById("address").value;
-    const modalAlert = document.getElementById("address-warn"); 
+    const modalAlert = document.getElementById("address-warn");
     const nomeAlert = document.getElementById("nome-warn");
     const formaPagamento = document.getElementById("payment-method").value;
     // Verificando se o carrinho está vazio ou se o endereço não foi preenchido
@@ -511,13 +511,21 @@ function enviarPedido() {
     // Adicionar os produtos e ingredientes à mensagem
     carrinho.forEach(item => {
         mensagem += `Produto: ${item.nomeProduto}\n`;
+        mensagem += `Cor: ${item.corProduto}\n`;
+        mensagem += `Tamanho: ${item.tamanhoProduto}\n`;
         mensagem += `Quantidade: ${item.quantidadeProduto}\n`;
         mensagem += `Preço: R$ ${(item.precoProduto).toFixed(2)}\n\n`;
     });
     // Calcular o total da compra
     let totalCompra = carrinho.reduce((total, item) => total + (item.precoProduto * item.quantidadeProduto), 0);
+    // Obtém o valor do desconto
+    const desconto = parseFloat(document.getElementById("descontoTotal").innerText);
+    // Aplica o desconto ao total
+    const totalComDesconto = totalCompra - desconto;
     mensagem += `Cupom aplicado: ${cupomUtilizado}\n\n`;
-    mensagem += `Total: R$ ${totalCompra.toFixed(2)}\n\n`;
+    mensagem += `Subtotal: R$ ${totalCompra.toFixed(2)}\n`;
+    mensagem += `Desconto: R$ ${desconto.toFixed(2)}\n`;
+    mensagem += `Total com Desconto: R$ ${totalComDesconto.toFixed(2)}\n`;
     // Adicionar outras informações à mensagem
     mensagem += `Forma de Pagamento: ${formaPagamento}\n\n`;
     mensagem += `Endereço de entrega: ${enderecoCliente}\n\n`;
