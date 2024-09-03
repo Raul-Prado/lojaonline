@@ -1,9 +1,9 @@
 html{
     scroll-behavior: smooth;
 }
-body{
+/* body{
     background-color: black;
-}
+} */
 .encutador-text {
     display: -webkit-box;
     -webkit-line-clamp: 1; /* Número de linhas */
@@ -22,4 +22,14 @@ hr{
 }
 button{
     font-family: "Montserrat", sans-serif;
+}
+/* modal */
+.show-modal {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+#list-product {
+    max-height: 16rem; /* Altura máxima para que o conteúdo não ultrapasse */
+    overflow-y: auto; /* Scroll vertical se o conteúdo for maior que a altura */
 }

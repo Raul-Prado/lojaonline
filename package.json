@@ -12,5 +12,9 @@
   "description": "",
   "devDependencies": {
     "tailwindcss": "^3.4.10"
+  },
+  "dependencies": {
+    "correios-brasil": "^3.0.6",
+    "node-fetch": "^3.3.2"
   }
 }
