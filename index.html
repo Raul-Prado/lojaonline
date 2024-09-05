@@ -32,10 +32,11 @@
 </head>
 
 <body>
-    <nav class="fixed top-0 left-0 lg:p-8 md:p-8 z-30 bg-yellow text-black w-full uppercase tracking-[0.22px] md:text-[18px]">
+    <nav
+        class="fixed top-0 left-0 lg:p-8 md:p-8 z-30 bg-yellow text-black w-full uppercase tracking-[0.22px] md:text-[18px]">
         <div class="p-2 container mx-auto flex justify-between items-center">
             <div>
-                <img src="./src/img/logo-black.png" alt="Shop Logo" srcset="" loading="lazy">
+                <img src="./src/img/logo-black.png" alt="Shop Logo" loading="lazy" width="200" height="100">
             </div>
             <ul class="hidden md:flex flex-row gap-16 justify-end items-center">
                 <!-- Menu Masculino com Submenu -->
@@ -67,9 +68,10 @@
                     </button>
                 </li>
             </ul>
-            <div class="md:hidden z-20"><p class="btn-modal"></p>
+            <div class="md:hidden z-20">
+                <p class="btn-modal"></p>
                 <div class="space-y-1 rotate-180" data-id-button="2" id="hamburger">
-                    
+
                     <div class="w-6 h-0.5 transition-all bg-black"></div>
                     <div class="w-6 h-0.5 transition-all bg-black"></div>
                     <div class="w-6 h-0.5 transition-all bg-black"></div>
@@ -77,7 +79,7 @@
                 <ul class="flex flex-col justify-start gap-5 h-screen absolute top-0 left-0 bg-yellow p-10 items-start -translate-x-full transition-all"
                     id="mobile-nav">
                     <div>
-                        <img src="./src/img/logo-black.png" alt="Shop Logo" loading="lazy">
+                        <img src="./src/img/logo-black.png" alt="Shop Logo" loading="lazy" width="200" height="100">
                     </div>
                     <li class="font-bold">Masculino</li>
                     <ul class="pl-4">
@@ -93,7 +95,7 @@
                     </ul>
                     <li class="mt-4">
                         <button onclick="openModal(event)" class="btn-modal bg-black text-white rounded-md py-4 px-4"
-                        data-id-button="3" type="button">
+                            data-id-button="3" type="button">
                             <i class="fa fa-cart-plus text-lg text-white"></i> Carrinho
                         </button>
                     </li>
@@ -115,29 +117,20 @@
             </h1>
             <p class="md:text-[32px]">Produtos de qualidade, entrega rápida e atendimento personalizado ao seu alcance!
             </p>
-            <!-- <div class="flex flex-col md:flex-row md:items-center justify-evenly gap-9 pt-8">
-                <div class="w-1/2 h-1/2">
-                    <img class="" src="./src/img/banner-image-2.png" alt="banner image" srcset="" loading="lazy">
-                </div>
-                <a class="bg-black text-white rounded-md py-4 px-4 text-center" href="#">Compre agora</a>
-            </div> -->
         </div>
         <div class="">
-            <img class="w-full"
-                src="./src/img/camiseta_levi_s_masculina_preta_679_1_acd9fadd820a6395d2058f5a22c242d9.webp"
-                alt="banner image" loading="lazy" />
+            <img class="w-full" src="./src/img/camiseta_levi_s_masculina_preta_679_1_acd9fadd820a6395d2058f5a22c242d9.webp" alt="banner image" width="300" height="200"/>
         </div>
     </section>
     <!-- marcas -->
     <section class="flex flex-col justify-center items-center gap-12 my-10 bg-yellow py-[61px]">
         <p class="text-black text-center text-[32px] font-medium">Marcas</p>
         <div class="flex justify-center items-center gap-[121px] flex-wrap">
-            <div class="w-[118px]"><img src="./src/img/logos/marcas-como-nike.png" alt="Nike" loading="lazy"></div>
-            <div class="w-[150px]"><img src="./src/img/logos/marcas-como-jordan.png" alt="Jordan" loading="lazy"></div>
-            <div class="w-[176px]"><img src="./src/img/logos/marcas-como-obey.png" alt="Obey" loading="lazy"></div>
-            <div class="w-[150px]"><img src="./src/img/logos/marcas-como-lacoste.png" alt="Lacoste" loading="lazy">
-            </div>
-            <div class="w-[127px]"><img src="./src/img/logos/marcas-como-levis.png" alt="Levi's" loading="lazy"></div>
+            <div class="w-[118px]"><img src="./src/img/logos/marcas-como-nike.png" alt="Nike" loading="lazy" width="200" height="100"></div>
+            <div class="w-[150px]"><img src="./src/img/logos/marcas-como-jordan.png" alt="Jordan" loading="lazy" width="200" height="100"></div>
+            <div class="w-[176px]"><img src="./src/img/logos/marcas-como-obey.png" alt="Obey" loading="lazy" width="200" height="100"></div>
+            <div class="w-[150px]"><img src="./src/img/logos/marcas-como-lacoste.png" alt="Lacoste" loading="lazy" width="200" height="100"></div>
+            <div class="w-[127px]"><img src="./src/img/logos/marcas-como-levis.png" alt="Levi's" loading="lazy" width="200" height="100"></div>
         </div>
     </section>
     <!-- Categorias -->
@@ -153,7 +146,7 @@
             <div id="product-1" data-id="1"
                 class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center product">
                 <img src="/" loading="lazy" alt="Nome do Produto" data-id-product="1"
-                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover">
+                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover" width="300" height="200">
                 <h2 class="text-lg font-semibold mt-4 product-name"></h2>
                 <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Camiseta básica Lacoste, contendo
                     bordado na parte frontal o jacaré mais famoso do mundo, símbolo da marca.
@@ -164,15 +157,14 @@
                     <!-- Opções de Cor -->
                     <div>
                         <label for="color" class="text-gray-600 text-sm">Cor:</label>
-                        <select id="color"
+                        <select 
                             class="select-color mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
                     <!-- Opções de Tamanho -->
                     <div>
                         <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
-                        <select id="size"
-                            class="select-size mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                        <select class="select-size mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
                 </div>
@@ -185,7 +177,7 @@
             <div id="product-2" data-id="2"
                 class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center product">
                 <img src="/" loading="lazy" alt="Nome do Produto" data-id-product="2"
-                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover">
+                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover" width="300" height="200">
                 <h2 class="text-lg font-semibold mt-4 product-name"></h2>
                 <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Camiseta básica Nike skater board.</p>
                 <!-- Opções de Cor e Tamanho -->
@@ -193,15 +185,14 @@
                     <!-- Opções de Cor -->
                     <div>
                         <label for="color" class="text-gray-600 text-sm">Cor:</label>
-                        <select id="color"
+                        <select 
                             class="select-color mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
                     <!-- Opções de Tamanho -->
                     <div>
                         <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
-                        <select id="size"
-                            class="select-size mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
+                        <select class="select-size mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
                 </div>
@@ -214,7 +205,7 @@
             <div id="product-3" data-id="3"
                 class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center product">
                 <img src="/" loading="lazy" alt="Nome do Produto" data-id-product="3"
-                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover">
+                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover" width="300" height="200">
                 <h2 class="text-lg font-semibold mt-4 product-name"></h2>
                 <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Camiseta básica Levi's, contendo
                     bordado na parte frontal o jacaré mais famoso do mundo, símbolo da marca.
@@ -225,14 +216,14 @@
                     <!-- Opções de Cor -->
                     <div>
                         <label for="color" class="text-gray-600 text-sm">Cor:</label>
-                        <select id="color"
+                        <select 
                             class="select-color mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
                     <!-- Opções de Tamanho -->
                     <div>
                         <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
-                        <select id="size"
+                        <select
                             class="select-size mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm"></select>
                     </div>
                 </div>
@@ -245,7 +236,7 @@
             <div id="product-4" data-id="4"
                 class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center product">
                 <img src="/" loading="lazy" alt="Nome do Produto" data-id-product="4"
-                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover">
+                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover" width="300" height="200">
                 <h2 class="text-lg font-semibold mt-4 product-name"></h2>
                 <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Camiseta básica OBEY, contendo
                     bordado na parte frontal o jacaré mais famoso do mundo, símbolo da marca.
@@ -256,14 +247,14 @@
                     <!-- Opções de Cor -->
                     <div>
                         <label for="color" class="text-gray-600 text-sm">Cor:</label>
-                        <select id="color"
+                        <select 
                             class="select-color mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
                     <!-- Opções de Tamanho -->
                     <div>
                         <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
-                        <select id="size"
+                        <select
                             class="select-size mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
@@ -277,7 +268,7 @@
             <div id="product-5" data-id="5"
                 class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center product">
                 <img src="/" loading="lazy" alt="Nome do Produto" data-id-product="5"
-                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover">
+                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover" width="300" height="200">
                 <h2 class="text-lg font-semibold mt-4 product-name"></h2>
                 <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Camiseta básica Nike Jordan, contendo
                     bordado na parte frontal o jacaré mais famoso do mundo, símbolo da marca.
@@ -288,14 +279,14 @@
                     <!-- Opções de Cor -->
                     <div>
                         <label for="color" class="text-gray-600 text-sm">Cor:</label>
-                        <select id="color"
+                        <select 
                             class="select-color mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
                     <!-- Opções de Tamanho -->
                     <div>
                         <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
-                        <select id="size"
+                        <select
                             class="select-size mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
@@ -318,7 +309,7 @@
             <div id="product-6" data-id="6"
                 class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center product">
                 <img src="/" loading="lazy" alt="Nome do Produto" data-id-product="6"
-                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover">
+                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover" width="300" height="200">
                 <h2 class="text-lg font-semibold mt-4 product-name"></h2>
                 <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Gorro unissex Lacoste em ribana de lã.
                 </p>
@@ -327,14 +318,14 @@
                     <!-- Opções de Cor -->
                     <div>
                         <label for="color" class="text-gray-600 text-sm">Cor:</label>
-                        <select id="color"
+                        <select 
                             class="select-color mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
                     <!-- Opções de Tamanho -->
                     <div>
                         <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
-                        <select id="size"
+                        <select
                             class="select-size mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
@@ -348,7 +339,7 @@
             <div id="product-7" data-id="7"
                 class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center product">
                 <img src="/" loading="lazy" alt="Nome do Produto" data-id-product="7"
-                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover">
+                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover" width="300" height="200">
                 <h2 class="text-lg font-semibold mt-4 product-name"></h2>
                 <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Meia Nike Everyday.</p>
                 <!-- Opções de Cor e Tamanho -->
@@ -356,14 +347,14 @@
                     <!-- Opções de Cor -->
                     <div>
                         <label for="color" class="text-gray-600 text-sm">Cor:</label>
-                        <select id="color"
+                        <select 
                             class="select-color mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
                     <!-- Opções de Tamanho -->
                     <div>
                         <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
-                        <select id="size"
+                        <select 
                             class="select-size mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
@@ -377,7 +368,7 @@
             <div id="product-8" data-id="8"
                 class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center product">
                 <img src="/" loading="lazy" alt="Nome do Produto" data-id-product="8"
-                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover">
+                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover" width="300" height="200">
                 <h2 class="text-lg font-semibold mt-4 product-name"></h2>
                 <p class="text-gray-600 text-sm mt-2 text-center encutador-text">BIG BOY WEB BELT.</p>
                 <!-- Opções de Cor e Tamanho -->
@@ -385,14 +376,14 @@
                     <!-- Opções de Cor -->
                     <div>
                         <label for="color" class="text-gray-600 text-sm">Cor:</label>
-                        <select id="color"
+                        <select 
                             class="select-color mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
                     <!-- Opções de Tamanho -->
                     <div>
                         <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
-                        <select id="size"
+                        <select 
                             class="select-size mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
@@ -406,7 +397,7 @@
             <div id="product-9" data-id="9"
                 class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center product">
                 <img src="/" loading="lazy" alt="Nome do Produto" data-id-product="9"
-                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover">
+                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover" width="300" height="200">
                 <h2 class="text-lg font-semibold mt-4 product-name"></h2>
                 <p class="text-gray-600 text-sm mt-2 text-center encutador-text">MOCHILA LEVI'S L-PACK STANDARD ISSUE
                     BATWING AZUL</p>
@@ -415,14 +406,14 @@
                     <!-- Opções de Cor -->
                     <div>
                         <label for="color" class="text-gray-600 text-sm">Cor:</label>
-                        <select id="color"
+                        <select 
                             class="select-color mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
                     <!-- Opções de Tamanho -->
                     <div>
                         <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
-                        <select id="size"
+                        <select 
                             class="select-size mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
@@ -436,7 +427,7 @@
             <div id="product-10" data-id="10"
                 class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center product">
                 <img src="/" loading="lazy" alt="Nome do Produto" data-id-product="10"
-                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover">
+                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover" width="300" height="200">
                 <h2 class="text-lg font-semibold mt-4 product-name"></h2>
                 <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Chapéu Jordan Apex</p>
                 <!-- Opções de Cor e Tamanho -->
@@ -444,14 +435,14 @@
                     <!-- Opções de Cor -->
                     <div>
                         <label for="color" class="text-gray-600 text-sm">Cor:</label>
-                        <select id="color"
+                        <select 
                             class="select-color mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
                     <!-- Opções de Tamanho -->
                     <div>
                         <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
-                        <select id="size"
+                        <select 
                             class="select-size mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
@@ -474,7 +465,7 @@
             <div id="product-11" data-id="11"
                 class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center product">
                 <img src="/" loading="lazy" alt="Nome do Produto" data-id-product="11"
-                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover">
+                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover" width="300" height="200">
                 <h2 class="text-lg font-semibold mt-4 product-name"></h2>
                 <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Tênis Nike Jordan Jumpman Mvp</p>
                 <!-- Opções de Cor e Tamanho -->
@@ -482,14 +473,14 @@
                     <!-- Opções de Cor -->
                     <div>
                         <label for="color" class="text-gray-600 text-sm">Cor:</label>
-                        <select id="color"
+                        <select 
                             class="select-color mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
                     <!-- Opções de Tamanho -->
                     <div>
                         <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
-                        <select id="size"
+                        <select
                             class="select-size mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
@@ -503,7 +494,7 @@
             <div id="product-12" data-id="12"
                 class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center product">
                 <img src="/" loading="lazy" alt="Nome do Produto" data-id-product="12"
-                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover">
+                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover" width="300" height="200">
                 <h2 class="text-lg font-semibold mt-4 product-name"></h2>
                 <p class="text-gray-600 text-sm mt-2 text-center encutador-text">TENIS LACOSTE AUDYSSOR TRAIL ZIP</p>
                 <!-- Opções de Cor e Tamanho -->
@@ -511,14 +502,14 @@
                     <!-- Opções de Cor -->
                     <div>
                         <label for="color" class="text-gray-600 text-sm">Cor:</label>
-                        <select id="color"
+                        <select 
                             class="select-color mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:byellow sm:text-sm">
                         </select>
                     </div>
                     <!-- Opções de Tamanho -->
                     <div>
                         <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
-                        <select id="size"
+                        <select 
                             class="select-size mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
@@ -532,7 +523,7 @@
             <div id="product-13" data-id="13"
                 class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center product">
                 <img src="/" loading="lazy" alt="Nome do Produto" data-id-product="13"
-                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover">
+                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover" width="300" height="200">
                 <h2 class="text-lg font-semibold mt-4 product-name"></h2>
                 <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Jordan Jordan 4 Retro Levi's</p>
                 <!-- Opções de Cor e Tamanho -->
@@ -540,14 +531,14 @@
                     <!-- Opções de Cor -->
                     <div>
                         <label for="color" class="text-gray-600 text-sm">Cor:</label>
-                        <select id="color"
+                        <select 
                             class="select-color mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
                     <!-- Opções de Tamanho -->
                     <div>
                         <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
-                        <select id="size"
+                        <select 
                             class="select-size mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
@@ -561,7 +552,7 @@
             <div id="product-14" data-id="14"
                 class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center product">
                 <img src="/" loading="lazy" alt="Nome do Produto" data-id-product="14"
-                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover">
+                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover" width="300" height="200">
                 <h2 class="text-lg font-semibold mt-4 product-name"></h2>
                 <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Tênis Lacoste L003 Evo Masculino</p>
                 <!-- Opções de Cor e Tamanho -->
@@ -569,14 +560,14 @@
                     <!-- Opções de Cor -->
                     <div>
                         <label for="color" class="text-gray-600 text-sm">Cor:</label>
-                        <select id="color"
+                        <select 
                             class="select-color mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
                     <!-- Opções de Tamanho -->
                     <div>
                         <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
-                        <select id="size"
+                        <select 
                             class="select-size mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
@@ -599,7 +590,7 @@
             <div id="product-15" data-id="15"
                 class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center product">
                 <img src="/" loading="lazy" data-id-product="15" alt="Nome do Produto"
-                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover">
+                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover" width="300" height="200">
                 <h2 class="text-lg font-semibold mt-4 product-name"></h2>
                 <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Camiseta Feminina Regular Fit em
                     Jersey.</p>
@@ -608,14 +599,14 @@
                     <!-- Opções de Cor -->
                     <div>
                         <label for="color" class="text-gray-600 text-sm">Cor:</label>
-                        <select id="color"
+                        <select 
                             class="select-color mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
                     <!-- Opções de Tamanho -->
                     <div>
                         <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
-                        <select id="size"
+                        <select 
                             class="select-size mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
@@ -629,7 +620,7 @@
             <div id="product-16" data-id="16"
                 class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center product">
                 <img src="/" loading="lazy" alt="Nome do Produto" data-id-product="16"
-                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover">
+                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover" width="300" height="200">
                 <h2 class="text-lg font-semibold mt-4 product-name"></h2>
                 <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Camiseta de Algodão Pima Jersey Leve de
                     Ajuste Relaxado.</p>
@@ -638,14 +629,14 @@
                     <!-- Opções de Cor -->
                     <div>
                         <label for="color" class="text-gray-600 text-sm">Cor:</label>
-                        <select id="color"
+                        <select 
                             class="select-color mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
                     <!-- Opções de Tamanho -->
                     <div>
                         <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
-                        <select id="size"
+                        <select 
                             class="select-size mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
@@ -659,7 +650,7 @@
             <div id="product-17" data-id="17"
                 class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center product">
                 <img src="/" loading="lazy" alt="Nome do Produto" data-id-product="17"
-                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover">
+                    class="product-image w-full h-48 cursor-pointer rounded-t-lg object-cover" width="300" height="200">
                 <h2 class="text-lg font-semibold mt-4 product-name"></h2>
                 <p class="text-gray-600 text-sm mt-2 text-center encutador-text">Camiseta com Estampa de Texto e
                     Modelagem Relaxada.</p>
@@ -668,14 +659,14 @@
                     <!-- Opções de Cor -->
                     <div>
                         <label for="color" class="text-gray-600 text-sm">Cor:</label>
-                        <select id="color"
+                        <select 
                             class="select-color mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
                     <!-- Opções de Tamanho -->
                     <div>
                         <label for="size" class="text-gray-600 text-sm">Tamanho:</label>
-                        <select id="size"
+                        <select
                             class="select-size mt-1 block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow focus:border-yellow sm:text-sm">
                         </select>
                     </div>
@@ -745,7 +736,6 @@
             </form>
         </div>
     </div>
-    </div>
     <!-- Promoção -->
     <section class="flex flex-col items-center py-36 bg-yellow">
         <h4 class="text-2xl font-black text-white text-center tracking-[1.7px] mb-8 md:leading-[70px] md:text-[40px]">
@@ -767,19 +757,18 @@
         <div class="flex flex-col gap-24 px-14 md:flex-row md:items-center md:justify-center">
             <div class="flex flex-col items-center gap-8 md:items-start">
                 <div>
-                    <img src="./src/img/FASHION.png" alt="Fashion Logo" loading="lazy" />
+                    <img src="./src/img/FASHION.png" alt="Fashion Logo" loading="lazy" width="200" height="100"/>
                 </div>
                 <div>
                     <p class="text-xl text-[#8E8E8E] md:text-2xl font-normal text-center md:text-left">
-                        Complete seu estilo com incríveis <br />
+                        Complete seu estilo com incríveis<br/>
                         roupas de nós.
                     </p>
                 </div>
                 <ul class="flex flex-row gap-[14px] justify-center md:justify-start">
-                    <li><a href="#"><img src="./images/fb.svg" alt="Facebook Logo" loading="lazy"> Facebook</a></li>
-                    <li><a href="#"><img src="./images/insta.svg" alt="Instagram Logo" loading="lazy"> Instagram</a>
-                    </li>
-                    <li><a href="#"><img src="./images/linkedin.png" alt="LinkedIn Logo" loading="lazy"> LinkedIn</a>
+                    <li><a href="#"><img src="./images/fb.svg" alt="Facebook Logo" loading="lazy" width="200" height="100"> Facebook</a></li>
+                    <li><a href="#"><img src="./images/insta.svg" alt="Instagram Logo" loading="lazy" width="200" height="100"> Instagram</a></li>
+                    <li><a href="#"><img src="./images/linkedin.png" alt="LinkedIn Logo" loading="lazy" width="200" height="100"> LinkedIn</a>
                     </li>
                 </ul>
             </div>
@@ -814,7 +803,7 @@
     <script src="./src/js/menuMobile.js" async></script>
     <script src="./src/js/script.js" defer></script>
     <script src="./src/js/geo.js" defer></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
 </body>
 
 </html>
