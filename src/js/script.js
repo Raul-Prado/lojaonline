@@ -623,12 +623,12 @@ function enviarPedido() {
     let mensagem = `Olá, meu nome é ${nomeCliente}\n\n Gostaria de fazer um pedido abaixo:\n\n`;
     // Adicionar os produtos e ingredientes à mensagem
     carrinho.forEach(item => {
-        mensagem += `Produto: ${item.nomeProduto}\n`;
-        mensagem += `Gênero: ${item.genero}\n`;
-        mensagem += `Cor: ${item.corProduto}\n`;
-        mensagem += `Tamanho: ${item.tamanhoProduto}\n`;
-        mensagem += `Quantidade: ${item.quantidadeProduto}\n`;
-        mensagem += `Preço: R$ ${(item.precoProduto).toFixed(2)}\n\n`;
+        mensagem += `*Produto* ${item.nomeProduto}\n`;
+        mensagem += `*Gênero:* ${item.generoProduto}\n`;
+        mensagem += `*Cor:* ${item.corProduto}\n`;
+        mensagem += `*Tamanho:* ${item.tamanhoProduto}\n`;
+        mensagem += `*Quantidade:* ${item.quantidadeProduto}\n`;
+        mensagem += `*Preço: R$* ${(item.precoProduto).toFixed(2)}\n\n`;
     });
     // Calcular o total da compra
     let totalCompra = carrinho.reduce((total, item) => total + (item.precoProduto * item.quantidadeProduto), 0);
@@ -636,15 +636,15 @@ function enviarPedido() {
     const desconto = parseFloat(document.getElementById("descontoTotal").innerText);
     // Aplica o desconto ao total
     const totalComDesconto = totalCompra - desconto;
-    mensagem += `Cupom aplicado: ${cupomUtilizado}\n\n`;
-    mensagem += `Subtotal: R$ ${totalCompra.toFixed(2)}\n`;
-    mensagem += `Desconto: R$ ${desconto.toFixed(2)}\n`;
-    mensagem += `Total com Desconto: R$ ${totalComDesconto.toFixed(2)}\n`;
+    mensagem += `*Cupom aplicado:* ${cupomUtilizado}\n\n`;
+    mensagem += `*Subtotal: R$* ${totalCompra.toFixed(2)}\n`;
+    mensagem += `*Desconto: R$* ${desconto.toFixed(2)}\n`;
+    mensagem += `*Total com Desconto: R$* ${totalComDesconto.toFixed(2)}\n`;
     // Adicionar outras informações à mensagem
-    mensagem += `Forma de Pagamento: ${formaPagamento}\n\n`;
-    mensagem += `Endereço de entrega: ${enderecoCliente}\n\n`;
-    mensagem += `pedido feito em ${dia}/${mes}/${ano} às ${horas}:${minutos} \n\n`;
-    mensagem += 'Por favor, confirme o recebimento deste pedido.';
+    mensagem += `*Forma de Pagamento:* ${formaPagamento}\n\n`;
+    mensagem += `*Endereço de entrega:* ${enderecoCliente}\n\n`;
+    mensagem += `_pedido feito em ${dia}/${mes}/${ano} às ${horas}:${minutos}_ \n\n`;
+    mensagem += '*Por favor, confirme o recebimento deste pedido.*';
     // Encodificar e enviar a mensagem via WhatsApp
     const encodedMessage = encodeURIComponent(mensagem);
     const url = `https://wa.me/${phone}?text=${encodedMessage}`;
