@@ -32,9 +32,8 @@
 </head>
 
 <body>
-    <nav
-        class="fixed top-0 left-0 lg:p-10 z-30 bg-yellow text-black w-full uppercase tracking-[0.22px] md:text-[18px] md:p-8">
-        <div class="container mx-auto flex flex-row justify-between items-center">
+    <nav class="fixed top-0 left-0 lg:p-8 md:p-8 z-30 bg-yellow text-black w-full uppercase tracking-[0.22px] md:text-[18px]">
+        <div class="p-2 container mx-auto flex justify-between items-center">
             <div>
                 <img src="./src/img/logo-black.png" alt="Shop Logo" srcset="" loading="lazy">
             </div>
@@ -62,14 +61,15 @@
                 </li>
                 <!-- Carrinho -->
                 <li>
-                    <button onclick="openModal(event)" class=" btn-modal bg-black text-white rounded-md py-4 px-4"
-                        type="button">
+                    <button onclick="openModal(event)" class="btn-modal bg-black text-white rounded-md py-4 px-4"
+                        data-id-button="1" type="button">
                         <i class="fa fa-cart-plus text-lg text-white"></i> Carrinho
                     </button>
                 </li>
             </ul>
-            <div class="md:hidden z-20">
-                <div class="space-y-1 rotate-180" id="hamburger">
+            <div class="md:hidden z-20"><p class="btn-modal"></p>
+                <div class="space-y-1 rotate-180" data-id-button="2" id="hamburger">
+                    
                     <div class="w-6 h-0.5 transition-all bg-black"></div>
                     <div class="w-6 h-0.5 transition-all bg-black"></div>
                     <div class="w-6 h-0.5 transition-all bg-black"></div>
@@ -79,14 +79,12 @@
                     <div>
                         <img src="./src/img/logo-black.png" alt="Shop Logo" loading="lazy">
                     </div>
-                    <!-- Menu Mobile Masculino com Submenu -->
                     <li class="font-bold">Masculino</li>
                     <ul class="pl-4">
                         <li><a href="#masculino-camisetas" class="block py-2 hover:bg-gray-200">Camisetas</a></li>
                         <li><a href="#masculino-acessorios" class="block py-2 hover:bg-gray-200">Acessórios</a></li>
                         <li><a href="#masculino-tenis" class="block py-2 hover:bg-gray-200">Tênis</a></li>
                     </ul>
-                    <!-- Menu Mobile Feminino com Submenu -->
                     <li class="font-bold mt-4">Feminino</li>
                     <ul class="pl-4">
                         <li><a href="#feminino-camisetas" class="block py-2 hover:bg-gray-200">Camisetas</a></li>
@@ -94,8 +92,8 @@
                         <li><a href="#feminino-tenis" class="block py-2 hover:bg-gray-200">Tênis</a></li> -->
                     </ul>
                     <li class="mt-4">
-                        <button class="bg-black text-white rounded-md py-4 px-4" type="button"
-                            onclick="openModal(event)">
+                        <button onclick="openModal(event)" class="btn-modal bg-black text-white rounded-md py-4 px-4"
+                        data-id-button="3" type="button">
                             <i class="fa fa-cart-plus text-lg text-white"></i> Carrinho
                         </button>
                     </li>
@@ -117,12 +115,12 @@
             </h1>
             <p class="md:text-[32px]">Produtos de qualidade, entrega rápida e atendimento personalizado ao seu alcance!
             </p>
-            <div class="flex flex-col md:flex-row md:items-center justify-evenly gap-9 pt-8">
+            <!-- <div class="flex flex-col md:flex-row md:items-center justify-evenly gap-9 pt-8">
                 <div class="w-1/2 h-1/2">
                     <img class="" src="./src/img/banner-image-2.png" alt="banner image" srcset="" loading="lazy">
                 </div>
                 <a class="bg-black text-white rounded-md py-4 px-4 text-center" href="#">Compre agora</a>
-            </div>
+            </div> -->
         </div>
         <div class="">
             <img class="w-full"
