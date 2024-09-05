@@ -498,23 +498,24 @@ function updateCarrinho() {
     validarCupom();
 }
 function atualizarIndicadorCarrinho() {
-    const botaoCarrinho = document.querySelector('.btn-modal');
-    const indicador = botaoCarrinho.querySelector('.cart-count');
+    const botaoCarrinho = document.querySelectorAll('.btn-modal');
+    botaoCarrinho.forEach(function (button) {
+        const indicador = button.querySelector('.cart-count');
+        let totalItems = carrinho.reduce((total, item) => total + item.quantidadeProduto, 0);
 
-    let totalItems = carrinho.reduce((total, item) => total + item.quantidadeProduto, 0);
+        if (!indicador) {
+            const indicadorNovo = document.createElement('span');
+            indicadorNovo.classList.add('cart-count', 'ml-2', 'bg-red-500', 'text-white', 'rounded-full', 'px-2', 'py-1', 'text-xs');
+            indicadorNovo.textContent = totalItems;
+            button.appendChild(indicadorNovo);
+        } else {
+            indicador.textContent = totalItems;
+        }
 
-    if (!indicador) {
-        const indicadorNovo = document.createElement('span');
-        indicadorNovo.classList.add('cart-count', 'ml-2', 'bg-red-500', 'text-white', 'rounded-full', 'px-2', 'py-1', 'text-xs');
-        indicadorNovo.textContent = totalItems;
-        botaoCarrinho.appendChild(indicadorNovo);
-    } else {
-        indicador.textContent = totalItems;
-    }
-
-    // Adiciona uma breve animação para chamar a atenção do usuário
-    botaoCarrinho.classList.add('animate-bounce');
-    setTimeout(() => botaoCarrinho.classList.remove('animate-bounce'), 500);
+        // Adiciona uma breve animação para chamar a atenção do usuário
+        button.classList.add('animate-bounce');
+        setTimeout(() => button.classList.remove('animate-bounce'), 500);
+    });
 }
 // remover cupom
 function validarCupom() {
@@ -623,6 +624,7 @@ function enviarPedido() {
     // Adicionar os produtos e ingredientes à mensagem
     carrinho.forEach(item => {
         mensagem += `Produto: ${item.nomeProduto}\n`;
+        mensagem += `Gênero: ${item.genero}\n`;
         mensagem += `Cor: ${item.corProduto}\n`;
         mensagem += `Tamanho: ${item.tamanhoProduto}\n`;
         mensagem += `Quantidade: ${item.quantidadeProduto}\n`;
